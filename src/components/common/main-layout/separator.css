@@ -1,0 +1,48 @@
+.separator {
+  background-color: #162446;
+  height: 132px;
+  display: flex;
+  align-items: center;
+}
+
+.separator-layout {
+  max-width: 1051px;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+  overflow: hidden;
+}
+
+.separator-layout::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+.separator-layout::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.separator-layout::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.separator-layout::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+@media only screen and (max-width: 1051px) {
+  .separator {
+    margin-top: 50px;
+  }
+  .separator-layout {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow-x: scroll;
+  }
+}

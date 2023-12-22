@@ -1,0 +1,111 @@
+.main-layout {
+  max-width: 1051px;
+  margin: auto;
+  position: relative;
+  margin-top: 73px;
+}
+.main-layout-text {
+  font-size: 90px;
+  font-weight: 400;
+  color: white;
+  line-height: 90px;
+}
+
+.main-layout-sub-text {
+  margin-top: 42px;
+  color: #767799;
+  font-size: 18px;
+}
+
+.main-layout-banner {
+  display: flex;
+  gap: 109px;
+  justify-content: space-between;
+}
+
+.main-layout-text-banner {
+  margin-top: 100px;
+}
+
+.main-layout-arrow {
+  position: absolute;
+  top: -20px;
+  left: 250px;
+}
+
+.main-layout-actions {
+  margin-top: 72px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.main-layout-radial-gradient {
+  position: absolute;
+  z-index: -1;
+  border-radius: 504px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #0f2b63 0%,
+    rgba(24, 69, 163, 0) 100%
+  );
+  filter: blur(100px);
+  left: -200px;
+  top: -150px;
+}
+
+.main-layout-action-btn {
+  width: 186px;
+  height: 64px;
+  background-color: var(--bg-color);
+  border: 1.5px solid white;
+  color: white;
+  font-size: 20px;
+}
+
+.main-layout-action-numbers {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.fa-arrow-left-long,
+.fa-arrow-right-long {
+  color: white;
+}
+
+.hand {
+  height: 660px;
+  width: 500px;
+}
+
+@media only screen and (max-width: 1051px) {
+  .main-layout {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .hand {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hand {
+    display: none;
+  }
+  .main-layout-arrow {
+    left: 220px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-layout-radial-gradient {
+    left: 100px;
+    top: 0;
+  }
+  .radial-gradient {
+    width: 100%;
+    height: auto;
+  }
+}

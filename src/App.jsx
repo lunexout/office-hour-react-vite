@@ -1,7 +1,14 @@
 import React from 'react'
+import { Header } from './components/common/header'
+import { MainLayout } from './components/common/main-layout'
+import { Separator } from './components/common/main-layout/separator'
 
-function App() {
-  return <h1>hello</h1>
+export const App = () => {
+  return (
+    <>
+      <Header />
+      <MainLayout />
+      <Separator />
+    </>
+  )
 }
-
-export default App

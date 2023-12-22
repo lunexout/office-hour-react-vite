@@ -1,0 +1,65 @@
+.header {
+  max-width: 1051px;
+  margin: auto;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-logo-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+}
+
+.header-actions {
+  display: flex;
+  gap: 102px;
+  align-items: center;
+}
+
+.header-items {
+  display: flex;
+  gap: 52px;
+  align-items: center;
+}
+
+.header-item {
+  padding-bottom: 5px;
+  color: #767799;
+}
+
+.header-item.active {
+  padding-bottom: 5px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.sign-in-btn {
+  width: 146px;
+  height: 50px;
+  background-color: var(--bg-color);
+  border: 1.5px solid white;
+  color: white;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1051px) {
+  .header {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header-items {
+    display: none;
+  }
+}
